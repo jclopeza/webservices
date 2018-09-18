@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<parent>
-		<groupId>com.xebialabs.congruencias</groupId>
-		<artifactId>congruencias</artifactId>
-		<version>2.0.0</version>
-	</parent>
+    <parent>
+        <groupId>com.xebialabs.congruencias</groupId>
+        <artifactId>congruencias</artifactId>
+        <version>3.0.0</version>
+    </parent>
 
-	<modelVersion>4.0.0</modelVersion>
-	<artifactId>webservices</artifactId>
-	<version>1.5.0-SNAPSHOT</version>
-	<packaging>aar</packaging>    <!-- Este package no es reconocido por defecto, por esto en el plugin maven-aar tenemos que indicar extensions = true -->
-	<!-- New version -->
-	<build>
-		<plugins>
-		<!-- Plugin Sonar -->
-			<plugin>
-				<groupId>org.sonarsource.scanner.maven</groupId>
-				<artifactId>sonar-maven-plugin</artifactId>
-				<version>3.4.0.905</version>
-				<executions>
-					<execution>
-						<id>sonar-analysis</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>sonar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		
-			<plugin>
-				<groupId>org.apache.axis2</groupId>
-				<artifactId>axis2-aar-maven-plugin</artifactId>
-				<version>1.6.1</version>
-				<extensions>true</extensions>
-				<configuration>
-					<aarName>congruenciasWebservices</aarName>
-				</configuration>
-			</plugin>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>webservices</artifactId>
+    <version>1.6.0-SNAPSHOT</version>
+    <packaging>aar</packaging>    <!-- Este package no es reconocido por defecto, por esto en el plugin maven-aar tenemos que indicar extensions = true -->
+    <!-- New version -->
+    <build>
+        <plugins>
+        <!-- Plugin Sonar -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.4.0.905</version>
+                <executions>
+                    <execution>
+                        <id>sonar-analysis</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sonar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        
+            <plugin>
+                <groupId>org.apache.axis2</groupId>
+                <artifactId>axis2-aar-maven-plugin</artifactId>
+                <version>1.6.1</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <aarName>congruenciasWebservices</aarName>
+                </configuration>
+            </plugin>
 
-		</plugins>
-	</build>
+        </plugins>
+    </build>
 
 </project>
