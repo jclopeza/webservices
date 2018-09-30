@@ -15,7 +15,7 @@ public class Congruencia {
         }
     }
 
-    //Webservice que realiza los calculos.
+    //Webservice que realiza los calculos
     public boolean isPar(int a) {
         int modulo = a % 2;
         if (modulo == 0) {
