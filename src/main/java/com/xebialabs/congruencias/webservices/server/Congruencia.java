@@ -2,7 +2,7 @@ package com.xebialabs.congruencias.webservices.server;
 
 public class Congruencia {
 
-    //Webservice que realiza los calculos.
+    //Webservice que realiza los calculos
     public boolean isCongruente(int a, int b, int c) {
         int diferencia = a - c;
         int modulo = diferencia % b;
