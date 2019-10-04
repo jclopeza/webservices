@@ -9,7 +9,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>webservices</artifactId>
-    <version>30.0.0-SNAPSHOT</version>
+    <version>31.0.0-SNAPSHOT</version>
     <packaging>aar</packaging>    <!-- Este package no es reconocido por defecto, por esto en el plugin maven-aar tenemos que indicar extensions = true -->
     <!-- News versions -->
     <build>
